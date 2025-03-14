@@ -38,10 +38,6 @@ setblock ~ ~ ~ trial_spawner{\
 		],\
 		loot_tables_to_eject:[\
 			{\
-					weight:1,\
-					data:"stellarity:items/materials/keys/winged"\
-			},\
-			{\
 				weight:1,\
 				data:"stellarity:end_city/trial_spawner/normal/consumables"\
 			}\

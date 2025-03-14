@@ -32,10 +32,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:terracotta"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/enderite_shard"
 				}
 			]
 		}

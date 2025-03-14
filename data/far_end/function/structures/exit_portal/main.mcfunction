@@ -14,7 +14,7 @@ execute if entity @p[predicate=stellarity:locations/dragons_den/in_main_area] if
 ## Respawn stuff
 # Count the number of respawn Crystals placed
 execute unless entity @e[type=minecraft:ender_dragon] run function stellarity:mobs/dragon/spawn/conditions
-# Start the respawn animation
+# # Start the respawn animation
 execute if entity @s[tag=fe.respawn] run function stellarity:mobs/dragon/spawn/animation
 
 # Remove certain tags and add different ones once Dragon is dead
@@ -22,13 +22,13 @@ execute if entity @s[tag=fe.in_dragon_fight] unless entity @e[type=minecraft:end
 
 execute unless score @s[tag=!fe.in_dragon_fight] stellarity.dragon.times_killed matches 1.. run function stellarity:mobs/dragon/spawn/respawn_crystal/illumnate_spot
 
-# Post generation for Altar of the Accursed
-# Can't really do it with pure Worldgen sadly
-# Or I could, but definitely not in the way I would want to
-execute if entity @s[tag=!stellarity.post_gen.initialized] in minecraft:the_end run function stellarity:post_gen/initialize
+# # Post generation for Altar of the Accursed
+# # Can't really do it with pure Worldgen sadly
+# # Or I could, but definitely not in the way I would want to
+# execute if entity @s[tag=!stellarity.post_gen.initialized] in minecraft:the_end run function stellarity:post_gen/initialize
 
-# Dragon Screenshake
-execute if entity @s[tag=fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_up
-execute if entity @s[tag=!fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_down
+# # Dragon Screenshake
+# execute if entity @s[tag=fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_up
+# execute if entity @s[tag=!fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_down
 
 execute if score #stellarity.dragon.ash_duration stellarity.misc matches 1.. run function stellarity:mobs/dragon/ash

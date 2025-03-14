@@ -25,26 +25,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:firework_star",
-					"weight": 6,
-					"functions": [
-						{
-							"function": "minecraft:set_firework_explosion",
-							"shape": "small_ball",
-							"colors": [
-								10691730,
-								6430586
-							]
-						}
-					]
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/keys/purpur",
-					"quality": 1
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:iron_nugget",
 					"weight": 12,
 					"functions": [
@@ -56,11 +36,6 @@
 							}
 						}
 					]
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/food/suspicious_stew/levitation",
-					"weight": 3
 				}
 			]
 		}

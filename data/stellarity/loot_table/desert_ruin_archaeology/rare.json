@@ -24,11 +24,6 @@
 					"type": "minecraft:item",
 					"weight": 2,
 					"name": "minecraft:dune_armor_trim_smithing_template"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"weight": 3,
-					"value": "stellarity:items/materials/sand_rune"
 				}
 			]
 		}

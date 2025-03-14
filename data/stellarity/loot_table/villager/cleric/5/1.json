@@ -4,12 +4,24 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/potions/lifeforce_potion"
+					"type": "minecraft:item",
+					"name": "minecraft:potion",
+					"functions": [
+						{
+							"function": "minecraft:set_potion",
+							"id": "minecraft:strength"
+						}
+					]
 				},
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/potions/red_potion"
+					"type": "minecraft:item",
+					"name": "minecraft:potion",
+					"functions": [
+						{
+							"function": "minecraft:set_potion",
+							"id": "minecraft:regeneration"
+						}
+					]
 				}
 			]
 		}

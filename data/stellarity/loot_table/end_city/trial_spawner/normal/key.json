@@ -1,13 +1,35 @@
 {
-	"type": "minecraft:chest",
 	"pools": [
 		{
 			"rolls": 1,
-			"bonus_rolls": 0,
 			"entries": [
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/keys/purpur"
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 6,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:spire_armor_trim_smithing_template"
 				}
 			]
 		}

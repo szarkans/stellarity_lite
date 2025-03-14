@@ -129,10 +129,6 @@
 				{
 					"type": "minecraft:empty",
 					"weight": 2
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/enderite_smithing_template"
 				}
 			]
 		}

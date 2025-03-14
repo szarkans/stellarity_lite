@@ -127,11 +127,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:lead"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"weight": 4,
-					"value": "stellarity:items/materials/enderite_shard"
 				}
 			]
 		}

@@ -1,7 +1,0 @@
-{
-	"function": "minecraft:enchant_randomly",
-	"options": [
-		"minecraft:luck_of_the_sea"
-	],
-	"only_compatible": true
-}

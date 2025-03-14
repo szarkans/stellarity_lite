@@ -1,125 +1,75 @@
 {
-	"type": "minecraft:chest",
-	"pools": [
-		{
-			"rolls": 2,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:end_city/vault/normal/rare",
-					"weight": 8
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:end_city/vault/normal/common",
-					"weight": 2
-				}
-			]
-		},
-		{
-			"rolls": {
-				"type": "minecraft:uniform",
-				"min": 1,
-				"max": 2
-			},
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "minecraft:chests/end_city_treasure"
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/enderite_shard",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 3
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": {
-				"type": "minecraft:uniform",
-				"min": 2,
-				"max": 4
-			},
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:end_city/vault/normal/common"
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:end_city/vault/normal/unique"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:random_chance",
-					"chance": 0.5
-				}
-			]
-		},
-		{
-			"rolls": {
-				"min": 0,
-				"max": 2
-			},
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:end_city/vault/normal/equipment"
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/enderite_smithing_template"
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:spire_armor_trim_smithing_template"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:random_chance",
-					"chance": 0.25
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/music_disc/fires_of_hokkai"
-				}
-			],
-			"conditions": [
-				{
-					"condition": "minecraft:random_chance",
-					"chance": 0.25
-				}
-			]
-		}
-	]
+  "type": "minecraft:vault",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 45
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 2,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": [
+                "minecraft:mending"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mojang_banner_pattern"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "quality": 1,
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_block",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

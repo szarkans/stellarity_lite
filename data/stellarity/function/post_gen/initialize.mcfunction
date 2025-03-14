@@ -1,6 +1,6 @@
 tag @s[type=marker] add stellarity.post_gen.initialized
 
-place template stellarity:altar_of_the_accursed 42 67 -48 none none 1 666
+# place template stellarity:altar_of_the_accursed 42 67 -48 none none 1 666
 
 execute as @e[type=end_crystal,predicate=stellarity:locations/dragons_den/in_biome] at @s run function stellarity:post_gen/remove_crystals
 

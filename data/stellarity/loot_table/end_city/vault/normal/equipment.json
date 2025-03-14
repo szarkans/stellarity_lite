@@ -25,50 +25,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:diamond_helmet",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_chestplate",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_leggings",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_boots",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:iron_axe",
 					"weight": 2
 				},
@@ -81,50 +37,6 @@
 					"type": "minecraft:item",
 					"name": "minecraft:iron_sword",
 					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:iron_helmet",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:iron_chestplate",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:iron_leggings",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:iron_boots",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
 				}
 			],
 			"functions": [

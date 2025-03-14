@@ -4,12 +4,6 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/enderite_shard",
-					"weight": 4,
-					"quality": 1
-				},
-				{
 					"type": "minecraft:item",
 					"name": "minecraft:gold_ingot",
 					"weight": 6

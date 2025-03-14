@@ -2,15 +2,6 @@
 	"type": "minecraft:chest",
 	"pools": [
 		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/explorer_maps/end_city"
-				}
-			]
-		},
-		{
 			"rolls": 10,
 			"entries": [
 				{

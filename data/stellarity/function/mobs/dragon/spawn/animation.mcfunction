@@ -8,7 +8,7 @@ execute if score @s stellarity.dragon.respawn_animation_progress matches 1 as @e
 execute if score @s stellarity.dragon.respawn_animation_progress matches 1 as @a[distance=..32] at @s run playsound minecraft:entity.blaze.shoot block @s ~ ~ ~ 0.33 0.9
 execute if score @s stellarity.dragon.respawn_animation_progress matches 1 as @a[distance=..32] at @s run playsound minecraft:entity.blaze.shoot block @s ~ ~ ~ 0.33 0.7
 
-execute if score #stellarity.config stellarity.config.enable_dragon_screenshake matches 1 \
+#execute if score #stellarity.config stellarity.config.enable_dragon_screenshake matches 1 \
 	as @a[distance=..64] run tag @s add stellarity.dragon.screenshake
 
 execute if score @s stellarity.dragon.respawn_animation_progress matches 100 run function stellarity:mobs/dragon/spawn/proper_start

@@ -6,19 +6,19 @@
 			"bonus_rolls": 0,
 			"entries": [
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/chorus_dagger",
-					"weight": 2
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/trinkets/crest_of_the_end",
-					"weight": 2
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/spellbooks/jinx",
-					"weight": 2
+					"type": "minecraft:item",
+					"name": "minecraft:book",
+					"weight": 7,
+					"functions": [
+						{
+							"function": "minecraft:enchant_with_levels",
+							"levels": {
+								"min": 20,
+								"max": 39
+							},
+							"options": "#minecraft:on_random_loot"
+						}
+					]
 				}
 			]
 		}

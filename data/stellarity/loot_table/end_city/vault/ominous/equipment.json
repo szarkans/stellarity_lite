@@ -43,50 +43,6 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_hoe",
 					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_helmet",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_chestplate",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_leggings",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:diamond_boots",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "reference",
-							"name": "stellarity:end_city_armor_trim"
-						}
-					]
 				}
 			],
 			"functions": [

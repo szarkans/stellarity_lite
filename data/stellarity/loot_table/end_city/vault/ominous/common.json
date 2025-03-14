@@ -38,38 +38,6 @@
 					]
 				},
 				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/hallowed_ingot",
-					"weight": 6,
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 4,
-								"max": 7
-							},
-							"add": false
-						}
-					]
-				},
-				{
-					"type": "minecraft:loot_table",
-					"value": "stellarity:items/materials/chorus_plating",
-					"weight": 6,
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 4,
-								"max": 7
-							},
-							"add": false
-						}
-					]
-				},
-				{
 					"type": "minecraft:item",
 					"name": "minecraft:ominous_bottle",
 					"weight": 5,
