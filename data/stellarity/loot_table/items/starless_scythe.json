@@ -1,0 +1,85 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_hoe",
+					"functions": [
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.starless_scythe.description.1",
+									"fallback": "Part of dealt damage is converted into healing",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.starless_scythe.description.2",
+									"fallback": "Can damage multiple mobs in one swing",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"id": "minecraft:base_attack_damage",
+									"attribute": "minecraft:generic.attack_damage",
+									"amount": 9,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "minecraft:base_attack_speed",
+									"attribute": "minecraft:generic.attack_speed",
+									"amount": -3.1,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "stellarity:base_sweeping_damage",
+									"attribute": "minecraft:player.sweeping_damage_ratio",
+									"amount": 0.6,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "stellarity:weapon_reach",
+									"attribute": "minecraft:player.entity_interaction_range",
+									"amount": 0.3,
+									"operation": "add_value",
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90001,
+								"minecraft:custom_data": {
+                                    "stellarity.special_item": "starless_scythe"
+                                },
+								"minecraft:max_damage": 1232,
+								"minecraft:item_name": "{\"translate\": \"stellarity.items.weapons.starless_scythe\",\"fallback\": \"Starless Scythe\",\"color\": \"#FFD70C\",\"italic\": false}",
+								"!minecraft:tool": {}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

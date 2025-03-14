@@ -1,0 +1,57 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bow",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": "{stellarity.special_item:\"call_of_the_void\"}",
+								"minecraft:custom_model_data": 90002,
+								"minecraft:max_damage": 424,
+								"minecraft:item_name": "{\"translate\": \"stellarity.items.weapons.call_of_the_void\",\"fallback\": \"Call of The Void\",\"color\": \"dark_purple\"}",
+								"minecraft:fire_resistant": {}
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"entity": "this",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.call_of_the_void.description.1",
+									"fallback": "Shoots Void Arrows, which reduce",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.call_of_the_void.description.2",
+									"fallback": "enemy HP and shatter on impact",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"stellarity:void_shot": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

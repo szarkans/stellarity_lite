@@ -1,0 +1,82 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90003,
+								"minecraft:custom_data": {
+									"stellarity.special_item": "prismember"
+								},
+								"minecraft:rarity": "epic",
+								"minecraft:item_name": "{\"translate\": \"stellarity.items.weapons.prismember\",\"fallback\": \"Prismember\",\"color\": \"#FF76D0\",\"italic\": false}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.prismember.description.1",
+									"fallback": "Sneak to charge up a fiery spin,",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.prismember.description.2",
+									"fallback": "igniting all nearby mobs and setting",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.prismember.description.3",
+									"fallback": "them on Prismatic Inferno",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"id": "minecraft:base_attack_damage",
+									"attribute": "minecraft:generic.attack_damage",
+									"amount": 7,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "minecraft:base_attack_speed",
+									"attribute": "minecraft:generic.attack_speed",
+									"amount": -2.4,
+									"operation": "add_value",
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"stellarity:infernal_infusion": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

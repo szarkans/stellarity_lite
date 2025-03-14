@@ -1,0 +1,103 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shield",
+					"functions": [
+						{
+							"function": "minecraft:set_banner_pattern",
+							"patterns": [
+								{
+									"pattern": "minecraft:base",
+									"color": "purple"
+								},
+								{
+									"pattern": "minecraft:gradient",
+									"color": "magenta"
+								},
+								{
+									"pattern": "minecraft:triangle_top",
+									"color": "black"
+								},
+								{
+									"pattern": "minecraft:triangle_bottom",
+									"color": "black"
+								},
+								{
+									"pattern": "minecraft:cross",
+									"color": "purple"
+								},
+								{
+									"pattern": "minecraft:curly_border",
+									"color": "black"
+								},
+								{
+									"pattern": "minecraft:flower",
+									"color": "purple"
+								},
+								{
+									"pattern": "minecraft:flower",
+									"color": "black"
+								}
+							],
+							"append": false
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90000,
+								"minecraft:hide_additional_tooltip": {},
+								"minecraft:custom_data": {
+									"stellarity.special_item": "crest_of_the_end"
+								},
+								"rarity": "rare",
+								"minecraft:item_name": "{\"translate\":  \"stellarity.items.trinkets.crest_of_the_end\",\"fallback\": \"Crest of The End\",\"color\": \"#9936D6\",\"italic\": false}",
+								"minecraft:fire_resistant": {}
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.trinkets.crest_of_the_end.description.1",
+									"fallback": "Blocking damage adds extra power",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.trinkets.crest_of_the_end.description.2",
+									"fallback": "to your next attack in retaliation",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"attribute": "minecraft:generic.attack_damage",
+									"id": "stellarity:crest_of_the_end.attack_damage",
+									"amount": 0.05,
+									"operation": "add_multiplied_total",
+									"slot": "hand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

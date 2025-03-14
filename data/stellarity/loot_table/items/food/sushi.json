@@ -1,0 +1,65 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tropical_fish",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90001,
+								"minecraft:custom_data": "{\"stellarity.special_item\": \"sushi\"}",
+								"minecraft:food": {
+									"nutrition": 4,
+									"saturation": 2.4,
+									"can_always_eat": false,
+									"eat_seconds": 1,
+									"effects": []
+								},
+								"minecraft:item_name": "{\"translate\":\"stellarity.items.food.sushi\",\"fallback\":\"Sushi\",\"color\":\"white\"}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								[
+									{
+										"text": "4",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#B88458",
+										"italic": false
+									},
+									" ",
+									{
+										"text": "2.4",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#FFDE4C",
+										"italic": false
+									}
+								],
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

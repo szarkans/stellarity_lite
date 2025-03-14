@@ -1,0 +1,59 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bow",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90001,
+								"minecraft:custom_data": {
+									"stellarity.special_item": "spectral_fury"
+								},
+								"minecraft:rarity": "uncommon",
+								"minecraft:max_damage": 636,
+								"minecraft:item_name": "{\"translate\": \"stellarity.items.weapons.spectral_fury\",\"fallback\": \"Spectral Fury\",\"color\": \"#BDF1FF\",\"italic\": false}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"entity": "this",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.spectral_fury.description.1",
+									"fallback": "Overcharged shots convert",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.spectral_fury.description.2",
+									"fallback": "Spectral Arrows into wisps",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.spectral_fury.description.3",
+									"fallback": "which seek out and attack mobs",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

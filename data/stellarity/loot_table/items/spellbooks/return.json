@@ -1,0 +1,63 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:knowledge_book",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:enchantment_glint_override": true,
+								"minecraft:custom_model_data": 90006,
+								"minecraft:recipes": [
+									"stellarity:events/spellbooks/use_return"
+								],
+								"minecraft:custom_data": {
+									"stellarity.special_item": "book_of_return"
+								},
+								"rarity": "uncommon",
+								"minecraft:item_name": "{\"translate\":  \"stellarity.items.spellbooks.return\",\"fallback\": \"Tome of Return\",\"color\": \"#9C369F\",\"italic\": false}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.spellbooks.return.description",
+									"fallback": "Teleports you to your spawnpoint",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "stellarity.items.spellbooks.cooldown_long",
+									"fallback": "Cooldown: %s minutes",
+									"color": "#9E9E9E",
+									"italic": false,
+									"with": [
+										{
+											"text": "2",
+											"color": "#C6C6C6",
+											"italic": false
+										}
+									]
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:end_crystal"
+		},
+		"title": {
+			"translate": "stellarity.advancements.crystal_crusher",
+			"fallback": "Crystal Crusher"
+		},
+		"description": {
+			"translate": "stellarity.advancements.crystal_crusher.description",
+			"fallback": "Destroy a protective End Crystal of an End City and collect its loot"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:end/find_end_city",
+	"criteria": {
+		"criteria": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:wooden_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.ancient_wooden_sword.flavor_text",
+									"fallback": "'reject Trails&Tales, embrace Indev'",
+									"color": "#EEEEEE",
+									"italic": true
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"id": "minecraft:base_attack_damage",
+									"attribute": "minecraft:generic.attack_damage",
+									"amount": 3,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "minecraft:base_attack_speed",
+									"attribute": "minecraft:generic.attack_speed",
+									"amount": 2133,
+									"operation": "add_value",
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": "{stellarity.special_item:\"alpha_wooden_sword\"}",
+								"minecraft:custom_model_data": 90000,
+								"minecraft:fire_resistant": {},
+								"minecraft:unbreakable": {
+									"show_in_tooltip": false
+								},
+								"minecraft:item_name": "{\"translate\":  \"stellarity.items.weapons.ancient_wooden_sword\",\"fallback\": \"Ancient Wooden Sword\",\"color\": \"white\",\"italic\": false}"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

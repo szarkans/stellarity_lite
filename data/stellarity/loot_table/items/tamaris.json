@@ -1,0 +1,84 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90002,
+								"minecraft:custom_data": {
+									"stellarity.special_item": "tamaris"
+								},
+								"minecraft:rarity": "rare",
+								"minecraft:max_damage": 1562,
+								"minecraft:item_name": "{\"translate\": \"stellarity.items.weapons.tamaris\",\"fallback\": \"Tamaris\",\"color\": \"#9936D6\",\"italic\": false}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.tamaris.description.1",
+									"fallback": "Sneak to instantly kill",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.weapons.tamaris.description.2",
+									"fallback": "a nearby enemy with low health",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "stellarity.items.weapons.tamaris.flavor_text",
+									"fallback": "'Property of Captain Charo'",
+									"color": "#EEEEEE",
+									"italic": true
+								},
+								"",
+								{
+									"translate": "- Developer Item -",
+									"color": "#BA02D7",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"attribute": "minecraft:generic.attack_damage",
+									"id": "minecraft:base_attack_damage",
+									"amount": 6,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"attribute": "minecraft:generic.attack_speed",
+									"id": "minecraft:base_attack_speed",
+									"amount": -2.4,
+									"operation": "add_value",
+									"slot": "mainhand"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

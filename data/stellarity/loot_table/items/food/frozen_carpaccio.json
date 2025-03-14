@@ -1,0 +1,71 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_beef",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90000,
+								"minecraft:custom_data": "{\"stellarity.special_item\": \"frozen_carpaccio\"}",
+								"minecraft:item_name": "{\"translate\":\"stellarity.items.food.frozen_carpaccio\",\"fallback\":\"Frozen Carpaccio\",\"color\":\"white\"}",
+								"minecraft:food": {
+									"nutrition": 7,
+									"saturation": 8.4,
+									"can_always_eat": true,
+									"eat_seconds": 1.5,
+									"effects": []
+								}
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								[
+									{
+										"text": "7",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#B88458",
+										"italic": false
+									},
+									" ",
+									{
+										"text": "8.4",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#FFDE4C",
+										"italic": false
+									}
+								],
+								{
+									"translate": "stellarity.items.frozen_carpaccio.usage",
+									"fallback": "Random positive effect",
+									"color": "blue",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:fishing_rod",
+			"components": {
+				"minecraft:custom_model_data": 90000
+			}
+		},
+		"title": {
+			"translate": "stellarity.advancements.void_reels",
+			"fallback": "Void Reels"
+		},
+		"description": {
+			"translate": "stellarity.advancements.void_reels.description",
+			"fallback": "Cast your Fishing Rod into the open darkness below"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:end/enter_end_gateway",
+	"criteria": {
+		"cast_fish": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

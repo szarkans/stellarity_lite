@@ -1,0 +1,34 @@
+loot give @s loot stellarity:items/food/fish/amethyst_budfish
+loot give @s loot stellarity:items/food/fish/bubblefish
+loot give @s loot stellarity:items/food/fish/crimson_tigerfish
+loot give @s loot stellarity:items/food/fish/crystal_heartfish
+loot give @s loot stellarity:items/food/fish/ender_koi
+loot give @s loot stellarity:items/food/fish/flarefin_koi
+loot give @s loot stellarity:items/food/fish/fleshy_piranha
+loot give @s loot stellarity:items/food/fish/frost_minnow
+loot give @s loot stellarity:items/food/fish/overgrown_cod
+loot give @s loot stellarity:items/food/fish/prismite
+loot give @s loot stellarity:items/food/fish/pufferfish
+
+loot give @s loot stellarity:items/food/perm_buffs/cleansing_potato
+loot give @s loot stellarity:items/food/perm_buffs/endurance_brew
+loot give @s loot stellarity:items/food/perm_buffs/energizing_fruit
+loot give @s loot stellarity:items/food/perm_buffs/fury_berries
+loot give @s loot stellarity:items/food/perm_buffs/lucky_carrot
+loot give @s loot stellarity:items/food/perm_buffs/miracle_fruit
+loot give @s loot stellarity:items/food/perm_buffs/rageroot
+
+loot give @s loot stellarity:items/food/candied_chorus_fruit
+loot give @s loot stellarity:items/food/chorus_juice
+loot give @s loot stellarity:items/food/chorus_pie
+loot give @s loot stellarity:items/food/chorus_stew
+loot give @s loot stellarity:items/food/enderman_flesh
+loot give @s loot stellarity:items/food/fried_chorus_fruit
+loot give @s loot stellarity:items/food/frozen_carpaccio
+loot give @s loot stellarity:items/food/golden_chorus_fruit
+loot give @s loot stellarity:items/food/grilled_enderman_flesh
+loot give @s loot stellarity:items/food/pho
+loot give @s loot stellarity:items/food/prismatic_sushi
+loot give @s loot stellarity:items/food/shepherds_pie
+loot give @s loot stellarity:items/food/shulker_body
+loot give @s loot stellarity:items/food/sushi

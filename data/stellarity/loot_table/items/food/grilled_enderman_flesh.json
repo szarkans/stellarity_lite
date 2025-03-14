@@ -1,0 +1,67 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:cooked_beef",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_model_data": 90001,
+								"minecraft:custom_data": {
+									"stellarity.special_item": "grilled_enderman_flesh"
+								},
+								"minecraft:food": {
+									"nutrition": 6,
+									"saturation": 9.6,
+									"can_always_eat": false,
+									"eat_seconds": 1.5,
+									"effects": []
+								},
+								"minecraft:item_name": "{\"translate\":\"stellarity.items.food.grilled_enderman_flesh\",\"fallback\":\"Grilled Enderman Flesh\",\"color\":\"white\"}"
+							}
+						},
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"lore": [
+								[
+									{
+										"text": "6",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#B88458",
+										"italic": false
+									},
+									" ",
+									{
+										"text": "9.6",
+										"color": "#EEEEEE",
+										"italic": false
+									},
+									{
+										"text": " 🍖",
+										"color": "#FFDE4C",
+										"italic": false
+									}
+								],
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

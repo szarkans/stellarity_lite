@@ -1,0 +1,104 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_leggings",
+					"functions": [
+						{
+							"function": "minecraft:set_lore",	
+							"mode": "replace_all",
+							"entity": "this",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.armors.set_bonus",
+									"fallback": "ғᴜʟʟ sᴇᴛ ʙᴏɴᴜs:",
+									"color": "#FF9952",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.armors.hallowed_armor.set_bonus.1",
+									"fallback": "Grants the ability to dodge attacks,",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								{
+									"translate": "stellarity.items.armors.hallowed_armor.set_bonus.2",
+									"fallback": "nullifying all damage and knockback",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:dyed_color": {
+									"rgb": 16768338,
+									"show_in_tooltip": false
+								},
+								"minecraft:custom_model_data": 90001,
+								"minecraft:custom_data": {
+									"stellarity.special_item": "hallowed_armor"
+								},
+								"minecraft:fire_resistant": {},
+								"minecraft:max_damage": 555,
+								"rarity": "uncommon",
+								"minecraft:item_name": "{\"translate\":  \"stellarity.items.armors.hallowed_armor.leggings\",\"fallback\": \"Hallowed Leggings\",\"color\": \"#FFDD52\",\"italic\": false}"
+							}
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"attribute": "minecraft:generic.armor",
+									"id": "minecraft:armor.leggings",
+									"amount": 6,
+									"operation": "add_value",
+									"slot": "legs"
+								},
+								{
+									"attribute": "minecraft:generic.armor_toughness",
+									"id": "minecraft:armor.leggings",
+									"amount": 3,
+									"operation": "add_value",
+									"slot": "legs"
+								},
+								{
+									"attribute": "minecraft:generic.knockback_resistance",
+									"id": "minecraft:armor.leggings",
+									"amount": 0.1,
+									"operation": "add_value",
+									"slot": "legs"
+								},
+								{
+									"attribute": "minecraft:generic.jump_strength",
+									"id": "minecraft:armor.boots",
+									"amount": 0.15,
+									"operation": "add_multiplied_base",
+									"slot": "legs"
+								},
+								{
+									"attribute": "minecraft:player.sneaking_speed",
+									"id": "minecraft:armor.boots",
+									"amount": 0.25,
+									"operation": "add_multiplied_base",
+									"slot": "legs"
+								}
+							]
+						} 
+					]
+				}
+			]
+		}
+	]
+}

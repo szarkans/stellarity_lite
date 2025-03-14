@@ -1,0 +1,82 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:trident",
+					"functions": [
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								"",
+								{
+									"translate": "stellarity.items.weapons.sandstorm_trident.description",
+									"fallback": "Creates wind tunnels when thrown",
+									"color": "#EEEEEE",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "stellarity.items.weapons.sandstorm_trident.flavor_text",
+									"fallback": "'he didn't want to do a portal gun'",
+									"color": "#EEEEEE",
+									"italic": true
+								},
+								"",
+								{
+									"translate": "- Donator Item -",
+									"color": "#F96854",
+									"italic": false
+								},
+								"",
+								{
+									"translate": "Stellarity",
+									"color": "#CC26FF",
+									"italic": true
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_attributes",
+							"modifiers": [
+								{
+									"id": "minecraft:base_attack_damage",
+									"attribute": "minecraft:generic.attack_damage",
+									"amount": 5,
+									"operation": "add_value",
+									"slot": "mainhand"
+								},
+								{
+									"id": "minecraft:base_attack_speed",
+									"attribute": "minecraft:generic.attack_speed",
+									"amount": -3.1,
+									"operation": "add_value",
+									"slot": "mainhand"
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_data": {
+									"stellarity.special_item": "sandstorm_trident"
+								},
+								"minecraft:custom_model_data": 90000,
+								"minecraft:fire_resistant": {},
+								"max_damage": 1264,
+								"minecraft:item_name": "{\"translate\":  \"stellarity.items.weapons.sandstorm_trident\",\"fallback\": \"Sandstorm Trident\",\"italic\": false}",
+								"minecraft:enchantments": {
+									"stellarity:mighty_wind": 1
+								},
+								"minecraft:rarity": "epic"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
