@@ -15,8 +15,10 @@ playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=0..] ~ ~ ~
 playsound minecraft:entity.generic.explode hostile @a[distance=0..] ~ ~ ~ 10 0
 
 execute store result entity @e[type=ender_dragon,limit=1] Attributes[{id:"minecraft:generic.max_health"}].base float 1 run scoreboard players get #stellarity.config stellarity.config.dragon_health
+
+# не нужно - я оффнул конфиг
 #execute store result entity @e[type=ender_dragon,limit=1] Health float 1 run scoreboard players get #stellarity.config stellarity.config.dragon_health
-execute store result bossbar stellarity:ender_dragon max run scoreboard players get #stellarity.config stellarity.config.dragon_health
+# execute store result bossbar stellarity:ender_dragon max run scoreboard players get #stellarity.config stellarity.config.dragon_health
 
 team join stellarity.dragon.pacify_others @e[type=minecraft:ender_dragon]
 

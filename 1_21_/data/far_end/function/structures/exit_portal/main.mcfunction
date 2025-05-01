@@ -25,7 +25,7 @@ execute unless score @s[tag=!fe.in_dragon_fight] stellarity.dragon.times_killed 
 # # Post generation for Altar of the Accursed
 # # Can't really do it with pure Worldgen sadly
 # # Or I could, but definitely not in the way I would want to
-# execute if entity @s[tag=!stellarity.post_gen.initialized] in minecraft:the_end run function stellarity:post_gen/initialize
+execute if entity @s[tag=!stellarity.post_gen.initialized] in minecraft:the_end run function stellarity:post_gen/initialize
 
 # # Dragon Screenshake
 # execute if entity @s[tag=fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_up
