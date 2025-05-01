@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:add",
+	"argument1": {
+		"type": "minecraft:mul",
+		"argument1": 0.8,
+		"argument2": {
+			"type": "minecraft:mul",
+			"argument1": {
+				"type": "minecraft:add",
+				"argument1": "stellarity:climate/depth",
+				"argument2": {
+					"type": "minecraft:mul",
+					"argument1": "stellarity:jaggedness",
+					"argument2": {
+						"type": "minecraft:half_negative",
+						"argument": {
+							"type": "minecraft:mul",
+							"argument1": "stellarity:factor",
+							"argument2": {
+								"type": "minecraft:noise",
+								"noise": "minecraft:jagged",
+								"xz_scale": 1500,
+								"y_scale": 0
+							}
+						}
+					}
+				}
+			},
+			"argument2": "stellarity:factor"
+		}
+	},
+	"argument2": "stellarity:base_3d_noise"
+}
