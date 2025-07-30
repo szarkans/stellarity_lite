@@ -9,7 +9,7 @@
     ],
     "supported_formats": {
       "min_inclusive": 48,
-      "max_inclusive": 61
+      "max_inclusive": 64
     }
   },
   "overlays": {
