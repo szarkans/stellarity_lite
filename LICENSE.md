@@ -1,18 +1,9 @@
-Copyright (c) 2021-2025 kohara & szarkan
 
-PERMITTED USES
-===================
 
-- You are free to use Stellarity for whatever personal purpose you desire.
+Copyright 2026 szarkan & kohara
 
-- You are free to modify the pack to your suiting.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-- You are permitted to use Stellarity as a part of for-profit projects - servers, modpacks, etc.
-    - Just remember about kohara and Szarkan during crediting.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-PROHIBITED USES
-===================
-
-- You are forbidden to reupload, republish or redistribute Stellarity lite, modified or not.
-    - You are allowed to publish modified versions of Stellarity lite only under kohara's permission. However, you are forbidden to claim it as your own creation and must leave appropriate credit.
-        - This also applies to using modified versions of Stellarity in modpacks.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
