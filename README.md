@@ -107,3 +107,7 @@ Found any other bugs? Contact `@szarkans` at Discord or `@szarkan` at Telegram.
 
 - 🟡 End's Phantasm - same problem as Enlightend which can be fixed the same way.  
 </details>
+
+## License
+
+Permission to release Stellarity Lite under MIT license was granted by kohara (original Stellarity author) via Discord DM on 15 March 2026, 1:44 (AM).
