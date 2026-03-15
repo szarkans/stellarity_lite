@@ -3,7 +3,7 @@
 This is a **fork** of [Stellarity](https://modrinth.com/datapack/stellarity) (made by **kohara**) - a datapack that completely overhauls **The End**, adding **23 new biomes**, redesigned **Strongholds** and **new structures** in The End!  
 This version contains only WorldGen part of it and is fully community-driven. **No support/bug-fixes/updates guaranteed.**
 
-### Try it yourself - <https://modrinth.com/datapack/stellarity-lite/settings/description>
+### Try it yourself - <https://modrinth.com/datapack/stellarity-lite>
 
 ***
 
