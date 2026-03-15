@@ -5,7 +5,7 @@
   "temperature_modifier": "none",
   "creature_spawn_probability": 0,
   "effects": {
-    "sky_color": 0,
+    
     "fog_color": 0,
     "water_color": 4445678,
     "water_fog_color": 270131,
