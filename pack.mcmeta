@@ -8,7 +8,8 @@
       }
     ],
     "min_format": 81,
-    "max_format": 94.1
+    "max_format": 94.1,
+    "supported_formats": [81,94]
   },
   "overlays": {
     "entries": [
