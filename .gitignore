@@ -1,2 +1,11 @@
 proof_of_MIT_approval.png
 *.zip
+
+# Test servers: keep only the harness scripts, not cores/worlds/JDKs/logs
+_servers/*
+!_servers/test.py
+!_servers/rcon.py
+!_servers/migrate_26_2.py
+
+# Stale uncommitted experiment kept for reference
+_old/26_2_full_copy_data/

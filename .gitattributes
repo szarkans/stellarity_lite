@@ -1,0 +1,8 @@
+# Normalize all text to LF — the repo lives on a Windows drive but is edited
+# from both Windows and WSL; without this every editor pass floods git status
+# with CRLF-only diffs.
+* text=auto eol=lf
+*.png binary
+*.nbt binary
+*.zip binary
+*.jar binary
