@@ -7,33 +7,15 @@
 				"color": "#CB4BFF"
 			}
 		],
-		"min_format": 81,
+		"min_format": 94,
 		"max_format": 108,
 		"supported_formats": [
-			81,
+			94,
 			108
 		]
 	},
 	"overlays": {
 		"entries": [
-			{
-				"directory": "1_21_9",
-				"formats": {
-					"min_inclusive": 81,
-					"max_inclusive": 88
-				},
-				"min_format": 81,
-				"max_format": 88
-			},
-			{
-				"directory": "1_21_7",
-				"formats": {
-					"min_inclusive": 81,
-					"max_inclusive": 81
-				},
-				"min_format": 81,
-				"max_format": 81
-			},
 			{
 				"directory": "1_21_11",
 				"formats": {
