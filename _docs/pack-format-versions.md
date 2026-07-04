@@ -25,12 +25,25 @@ Starting with 1.21.9, pack formats use a decimal minor version. Non-breaking cha
 - **min_format**: 81 (1.21.7)
 - **max_format**: 108
 - **supported_formats**: `[81, 108]`
-- **Overlay `1_21_9/`**: formats 82–88 (1.21.9 – 1.21.10) — full copy, pre-1.21.11 formats
+- **Overlay `1_21_9/`**: formats 81–88 (1.21.7 – 1.21.10) — full copy, pre-1.21.11 formats
+- **Overlay `1_21_7/`**: format 81 only (1.21.7 – 1.21.8) — 6-file patch stacked ON TOP of `1_21_9/` (listed after it in pack.mcmeta, see "Overlay System"); reverts two 1.21.9 renames, see "1.21.9 Breaking Changes"
 - **Overlay `1_21_11/`**: formats 89–100 (1.21.11) — full copy, tested clean on Paper 1.21.11
 - **Overlay `26_2/`**: formats 107–108 (26.2+) — `dimension_type` (adds `default_clock`) + 83 generated configured_feature copies + 1 predicate (see "26.2 Breaking Changes" below); tested clean on vanilla 26.2
 - **Base `data/`**: serves 26.1.x (format 101.1) directly; tested on Paper 26.1.2
 
 The old full-copy `26_2/` tree (stale, pre-random_patch-migration) is archived at `_old/26_2_full_copy_data/`.
+
+## pack.mcmeta Overlay Syntax — DUAL SYNTAX REQUIRED
+
+**≤1.21.8 (format ≤81) uses a different overlay-entry schema**: it requires the `formats` key (`{"min_inclusive": N, "max_inclusive": M}`) and fails with `Couldn't load overlays metadata: No key formats` on the 1.21.9+ `min_format`/`max_format` keys. When that happens **no overlays apply at all** and old versions read the raw base — hundreds of misleading downstream errors. Both parsers ignore each other's keys, so every overlay entry in this pack carries BOTH syntaxes (wiki explicitly sanctions this for backward-compat packs). Same idea as keeping `pack_format`+`supported_formats` alongside `min_format`/`max_format` in the `pack` section.
+
+**Stacking order**: overlays are applied in list order, the first applied first — so a LATER entry overrides an earlier one for the same file. `1_21_7` is listed after `1_21_9` and wins for format 81.
+
+## 1.21.9 Breaking Changes (reverted for 1.21.7–1.21.8 in `1_21_7/` overlay)
+
+Renames introduced in 1.21.9 — the `1_21_9/` overlay content uses the NEW names (correct for 1.21.9–1.21.10), so format 81 needs the small `1_21_7/` patch overlay with the OLD names:
+- Block `minecraft:chain` → `minecraft:iron_chain`. Affects: `minecraft:climbable` + `stellarity:_worldgen/frozen_spikes/everything_but_dripstone` block tags, `the_hallow/lanterns` configured feature, `post_gen/end_city/{top_tower,base_roof}/chains` mcfunctions (setblock/fill commands).
+- Noise router field `initial_density_without_jaggedness` → `preliminary_surface_level` (value unchanged: `stellarity:initial_density`). `1_21_7/`'s `noise_settings/end.json` carries **both** keys — each version ignores the unknown one.
 
 ## 1.21.11 Breaking Changes (fixed in `1_21_11/` + `26_2/` overlays)
 
@@ -57,7 +70,7 @@ Also in 1.21.11: `doFireTick`/`allowFireTicksAwayFromPlayer` removed, replaced b
 
 ## Server Test Harness (`_servers/`)
 
-`python3 _servers/test.py <1.21.11|26.1.2|26.2>` — builds the datapack zip, wipes the world, boots the server (Windows `java.exe` from WSL, `-Xmx2G`), waits for "Done", forceloads End chunk (0,0) via RCON, stops gracefully, prints a deduplicated error summary (stack traces stripped). Full log: `_servers/<ver>/server.log`. Server cores: Paper for 1.21.11/26.1.2, vanilla `server.jar` for 26.2 (its inner jar is extracted to `_servers/26.2/ref/server-26.2.jar` — grep it for ground-truth worldgen/advancement formats). Tests bind fixed ports — run sequentially, never in parallel.
+`python3 _servers/test.py <1.21.8|1.21.11|26.1.2|26.2>` — builds the datapack zip, wipes the world, boots the server (Windows `java.exe` from WSL, `-Xmx2G`), waits for "Done", forceloads End chunk (0,0) via RCON, stops gracefully, prints a deduplicated error summary (stack traces stripped). Full log: `_servers/<ver>/server.log`. Server cores: Paper for 1.21.8/1.21.11/26.1.2 (download more via `https://fill.papermc.io/v3/projects/paper/versions/<ver>/builds/latest`), vanilla `server.jar` for 26.2 (its inner jar is extracted to `_servers/26.2/ref/server-26.2.jar` — grep it for ground-truth worldgen/advancement formats). Tests bind fixed ports — run sequentially, never in parallel.
 
 ## Adding a New Version
 
@@ -71,7 +84,8 @@ Also in 1.21.11: `doFireTick`/`allowFireTicksAwayFromPlayer` removed, replaced b
 Overlays override base-layer files for specific format ranges. The base `data/` folder is the default and should target the **latest** Minecraft version. Older versions that need different files get overlays.
 
 Current overlays:
-- `1_21_9/` — formats 82–88 (1.21.9 – 1.21.10); full copy with pre-1.21.11 formats (camelCase gamerules, old `dimension_type`).
+- `1_21_9/` — formats 81–88 (1.21.7 – 1.21.10); full copy with pre-1.21.11 formats (camelCase gamerules, old `dimension_type`).
+- `1_21_7/` — format 81 only (1.21.7 – 1.21.8); 6-file patch listed AFTER `1_21_9` so it stacks on top: chain/iron_chain + noise router key renames (see "1.21.9 Breaking Changes").
 - `1_21_11/` — formats 89–100 (1.21.11); full copy with snake_case gamerules and 1.21.11 `dimension_type`.
 - `26_2/` — formats 107–108 (26.2+); only `dimension_type` (adds `default_clock`). All other 26.x migrations (forest_rock → block_blob, random_patch removal, entity predicate format) live in the base layer, which 26.1.x loads directly.
 

@@ -20,7 +20,7 @@ def java_for(ver):
     if ver.startswith("26."):  # MC 26.1+ requires Java 25
         return str(next((ROOT / "_servers").glob("jdk-25*")) / "bin" / "java.exe")
     return "/mnt/c/Program Files/Java/jdk-24/bin/java.exe"
-PACK_PARTS = ["pack.mcmeta", "pack.png", "data", "1_21_9", "1_21_11", "26_2"]
+PACK_PARTS = ["pack.mcmeta", "pack.png", "data", "1_21_7", "1_21_9", "1_21_11", "26_2"]
 RCON_PORT = 25601
 RCON_PW = "stellarity-test"
 BOOT_TIMEOUT = 420

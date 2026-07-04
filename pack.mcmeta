@@ -18,16 +18,37 @@
 		"entries": [
 			{
 				"directory": "1_21_9",
-				"min_format": 82,
+				"formats": {
+					"min_inclusive": 81,
+					"max_inclusive": 88
+				},
+				"min_format": 81,
 				"max_format": 88
 			},
 			{
+				"directory": "1_21_7",
+				"formats": {
+					"min_inclusive": 81,
+					"max_inclusive": 81
+				},
+				"min_format": 81,
+				"max_format": 81
+			},
+			{
 				"directory": "1_21_11",
+				"formats": {
+					"min_inclusive": 89,
+					"max_inclusive": 100
+				},
 				"min_format": 89,
 				"max_format": 100
 			},
 			{
 				"directory": "26_2",
+				"formats": {
+					"min_inclusive": 107,
+					"max_inclusive": 108
+				},
 				"min_format": 107,
 				"max_format": 108
 			}
