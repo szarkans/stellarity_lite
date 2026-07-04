@@ -1,23 +1,36 @@
 {
-  "pack": {
-    "pack_format": 94.1,
-    "description": [
-      {
-        "text": "This ender expansion is... lite?",
-        "color": "#CB4BFF"
-      }
-    ],
-    "min_format": 81,
-    "max_format": 94.1,
-    "supported_formats": [81,94]
-  },
-  "overlays": {
-    "entries": [
-      {
-        "directory": "1_21_7-1_21_9",
-        "min_format": 88,
-        "max_format": 88
-      }
-    ]
-  }
+	"pack": {
+		"pack_format": 107.1,
+		"description": [
+			{
+				"text": "This ender expansion is... lite?",
+				"color": "#CB4BFF"
+			}
+		],
+		"min_format": 81,
+		"max_format": 108,
+		"supported_formats": [
+			81,
+			108
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "1_21_9",
+				"min_format": 82,
+				"max_format": 88
+			},
+			{
+				"directory": "1_21_11",
+				"min_format": 89,
+				"max_format": 100
+			},
+			{
+				"directory": "26_2",
+				"min_format": 107,
+				"max_format": 108
+			}
+		]
+	}
 }
