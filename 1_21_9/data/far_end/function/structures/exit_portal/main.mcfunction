@@ -32,3 +32,8 @@ execute if entity @s[tag=!stellarity.post_gen.initialized] in minecraft:the_end 
 # execute if entity @s[tag=!fe.respawn] as @a[tag=stellarity.dragon.screenshake] at @s run function stellarity:mobs/dragon/spawn/screenshake/tick_down
 
 execute if score #stellarity.dragon.ash_duration stellarity.misc matches 1.. run function stellarity:mobs/dragon/ash
+
+## Vanilla podium purge (≤1.21.x — vanilla dragon fight cannot be disabled before 26.1)
+# The vanilla fight re-places its bedrock fountain at the heightmap top of (0,0)
+# whenever it cannot find its own portal pattern. Detect and erase it.
+execute positioned 0 0 0 positioned over motion_blocking_no_leaves positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:bedrock if entity @s[distance=9..] run function far_end:structures/exit_portal/podium_cleanup
