@@ -1,5 +1,7 @@
 {
 	"values": [
-		"#stellarity:biomes/all"
+		"#stellarity:biomes/all",
+		"stellarity:frosted_valley",
+		"stellarity:the_void"
 	]
 }

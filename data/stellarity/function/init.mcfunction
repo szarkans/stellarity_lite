@@ -22,6 +22,7 @@ scoreboard objectives add stellarity.misc.loop.10s dummy
 scoreboard objectives add stellarity.misc.loop.15s dummy
 
 # Ender Dragon
+scoreboard objectives add stellarity.config.always_generate_egg dummy
 scoreboard objectives add stellarity.dragon.times_killed dummy
 scoreboard objectives add stellarity.dragon.screenshake dummy
 scoreboard objectives add stellarity.dragon.respawn_animation_progress dummy

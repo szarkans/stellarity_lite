@@ -9,3 +9,6 @@ _servers/*
 
 # Stale uncommitted experiment kept for reference
 _old/26_2_full_copy_data/
+/docs
+/_docs
+/_servers

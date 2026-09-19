@@ -46,7 +46,7 @@ Strongholds are about 5x larger and feature huge amounts of the aforementioned I
 
 ![https://i.imgur.com/fbg3HIb.png](https://i.imgur.com/fbg3HIb.png)
 
-End Cities have been redesigned from ground up in order to increase their difficulty and reinforce their position of endgame structures. Inspired by Trial Chambers, they are filled with Trial Spawners which spawn upgraded versions of the Overworld mobs and drop keys used to open Vaults. Just in case the City Trials weren't difficult enough, almost every tower contains a protective End Crystal which prevents nearby players from placing or breaking blocks.
+End Cities have been redesigned from ground up in order to increase their difficulty and reinforce their position of endgame structures. Inspired by Trial Chambers, they are filled with Trial Spawners which spawn upgraded versions of the Overworld mobs and drop loot. Keys for the Vaults come from Trial Chambers in the Overworld; the Elytra Vault requires an Ominous Trial Key. Just in case the City Trials weren't difficult enough, almost every tower contains a protective End Crystal which prevents nearby players from placing or breaking blocks.
 
 ![https://i.imgur.com/ypTJ6bL.png](https://i.imgur.com/ypTJ6bL.png)
 

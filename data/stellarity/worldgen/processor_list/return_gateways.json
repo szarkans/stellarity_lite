@@ -19,11 +19,7 @@
 						"data": {
 							"Age": 0,
 							"ExactTeleport": 1,
-							"ExitPortal": {
-								"X": 12,
-								"Y": 60,
-								"Z": 0
-							}
+							"exit_portal": [12, 60, 0]
 						}
 					}
 				}

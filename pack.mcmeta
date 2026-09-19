@@ -1,6 +1,5 @@
 {
 	"pack": {
-		"pack_format": 107.1,
 		"description": [
 			{
 				"text": "This ender expansion is... lite?",
@@ -8,29 +7,17 @@
 			}
 		],
 		"min_format": 94,
-		"max_format": 108,
-		"supported_formats": [
-			94,
-			108
-		]
+		"max_format": 108
 	},
 	"overlays": {
 		"entries": [
 			{
 				"directory": "1_21_11",
-				"formats": {
-					"min_inclusive": 89,
-					"max_inclusive": 100
-				},
 				"min_format": 89,
 				"max_format": 100
 			},
 			{
 				"directory": "26_2",
-				"formats": {
-					"min_inclusive": 107,
-					"max_inclusive": 108
-				},
 				"min_format": 107,
 				"max_format": 108
 			}
